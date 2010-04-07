@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>To add shortcuts or widgets:</item>
+        <item>To move a shortcut or widget:</item>
+        <item>To remove a shortcut or widget:</item>
+    </string-array>
+    <string-array name="tips">
+        <item>Touch &amp; hold an empty spot on a Home screen.</item>
+        <item>Touch &amp; hold an item and then drag it to a new spot.</item>
+        <item>Touch &amp; hold an item and then drag it to the Trash Can icon.</item>
+    </string-array>
+</resources>
