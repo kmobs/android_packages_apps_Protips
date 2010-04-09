@@ -15,7 +15,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Protips Widget</string>
-    <string name="widget_name">Android Tips</string>
+    <string name="widget_name">Home screen tips</string>
     <string name="pager_footer"><xliff:g id="curPage" example="1">%1$d</xliff:g> of <xliff:g id="numPages" example="2">%2$d</xliff:g></string>
 </resources>

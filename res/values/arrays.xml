@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="titles">
-        <item>To add shortcuts or widgets:</item>
-        <item>To move a shortcut or widget:</item>
-        <item>To remove a shortcut or widget:</item>
+        <item>See all your apps.</item>
+        <item>Add items to your Home screen.</item>
+        <item>Rearrange your Home screen.</item>
+        <item>Multiple Home screens.</item>
+        <item>Remove items.</item>
+        <item>See notifications.</item>
+        <item>Configure your phone.</item>
     </string-array>
     <string-array name="tips">
-        <item>Touch &amp; hold an empty spot on a Home screen.</item>
-        <item>Touch &amp; hold an item and then drag it to a new spot.</item>
-        <item>Touch &amp; hold an item and then drag it to the Trash Can icon.</item>
+        <item>Touch the Launcher icon at the bottom of the screen. @drawable/all_apps</item>
+        <item>Touch &amp; hold an empty spot to add shortcuts or widgets.</item>
+        <item>Touch &amp; hold an item and when it vibrates, drag it where you want.</item>
+        <item>Swipe left or right to switch. Move items to other screens.</item>
+        <item>Touch &amp; hold an item and when it vibrates, drag it to the Trash icon. @drawable/trash</item>
+        <item>Pull the Status bar down from the top of the screen.</item>
+        <item>Press the Menu button and touch Settings.</item>
     </string-array>
 </resources>

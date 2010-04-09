@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009 The Android Open Source Project
+ * Copyright (C) 2010 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,28 +16,33 @@
 
 package com.android.protips;
 
+import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.Service;
-import android.app.AlarmManager;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.IBinder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.SystemClock;
 import android.text.format.Time;
+import android.text.Spannable;
 import android.util.Log;
-import android.widget.RemoteViews;
 import android.view.View;
+import android.widget.RemoteViews;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.Random;
 
 /** Mister Widget appears on your home screen to provide helpful tips. */
@@ -137,7 +142,6 @@ public class ProtipWidget extends AppWidgetProvider {
     }
 
     public RemoteViews buildUpdate(Context context) {
-        // Pick out month names from resources
         RemoteViews updateViews = new RemoteViews(
             context.getPackageName(), R.layout.widget);
 
@@ -157,8 +161,26 @@ public class ProtipWidget extends AppWidgetProvider {
         updateViews.setOnClickPendingIntent(R.id.bugdroid, pending);
 
         if (mMessage >= 0) {
-            updateViews.setTextViewText(R.id.tip_message, mTips[mMessage]);
-            updateViews.setTextViewText(R.id.tip_header, mTitles[mMessage]);
+            CharSequence text = mTips[mMessage];
+            Pattern p = Pattern.compile(" *@(drawable/[a-z0-9_]+) *");
+            Matcher m = p.matcher(text);
+            if (m.find()) {
+                String imageName = m.group(1);
+                int resId = context.getResources().getIdentifier(
+                   
+                    imageName, null, context.getPackageName());
+                updateViews.setImageViewResource(R.id.tip_callout, resId);
+                updateViews.setViewVisibility(R.id.tip_callout, View.VISIBLE);
+                text = m.replaceFirst("");
+            } else {
+                updateViews.setImageViewResource(R.id.tip_callout, 0);
+                updateViews.setViewVisibility(R.id.tip_callout, View.GONE);
+            }
+
+            updateViews.setTextViewText(R.id.tip_message, 
+                text);
+            updateViews.setTextViewText(R.id.tip_header,
+                mTitles[mMessage]);
             updateViews.setTextViewText(R.id.tip_footer, 
                 String.format(context.getResources().getString(R.string.pager_footer),
                 (1+mMessage), mTips.length));
