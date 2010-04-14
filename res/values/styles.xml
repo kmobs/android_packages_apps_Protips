@@ -13,5 +13,7 @@
     </style>
     <style name="TipText.Footer">
         <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#AAAAAA</item>
     </style>
 </resources>

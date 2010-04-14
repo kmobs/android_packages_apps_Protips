@@ -128,6 +128,9 @@ public class ProtipWidget extends AppWidgetProvider {
     }
 
     private void blink(int blinks) {
+        // don't blink if no bubble showing or if goodmorning() is happening
+        if (mMessage < 0) return;
+
         setIcon(R.drawable.droidman_closed);
         try {
             Thread.sleep(100);

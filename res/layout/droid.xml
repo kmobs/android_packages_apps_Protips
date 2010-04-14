@@ -14,14 +14,13 @@
      limitations under the License.
 -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget"
-    android:layout_width="fill_parent"
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bugdroid"
+    android:src="@drawable/droidman_down_closed"
+    android:scaleType="center"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="5dip"
-    >
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    />
 
-    <include layout="@layout/droid" />
-    <include layout="@layout/bubble" />
-</RelativeLayout>
