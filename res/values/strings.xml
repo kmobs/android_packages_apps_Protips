@@ -15,6 +15,11 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of tips widget (shown in Launcher "add widget" list) -->
     <string name="widget_name">Home screen tips</string>
+    <!-- Format string for the footer of the tip bubble. Substitutions:
+            %1$d - the number of the current tip
+            %2$d - the total number of tips
+         -->
     <string name="pager_footer"><xliff:g id="curPage" example="1">%1$d</xliff:g> of <xliff:g id="numPages" example="2">%2$d</xliff:g></string>
 </resources>

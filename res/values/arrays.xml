@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="titles">
-        <item>See all your apps.</item>
-        <item>Add items to your Home screen.</item>
-        <item>Rearrange your Home screen.</item>
-        <item>Remove items.</item>
-        <item>Multiple Home screens.</item>
-        <item>See notifications.</item>
-        <item>Configure your phone.</item>
-        <item>Done with this widget?</item>
-    </string-array>
+    <!-- Set of tips to show the user.
+
+         First line is the tip title, which is shown in bold on its own line.
+
+         All subsequent text is placed into the tip body.
+
+         The occurrence of @drawable/foo causes the bitmap drawable named "foo"
+         to be displayed to the right of the tip text.
+
+         Example for tip #1:
+          _____________________________________________     \_/
+         |                                             |   /._.\
+         |  See all your apps.         [all_apps.png]   > U|   |U
+         |  Touch the Launcher icon.                   |   |___|
+         |_____________________________________________|    U U
+    -->
     <string-array name="tips">
-        <item>Touch the Launcher icon. @drawable/all_apps</item>
-        <item>Touch &amp; hold an empty spot to add shortcuts or widgets.</item>
-        <item>Touch &amp; hold an item and when it vibrates, drag it where you want.</item>
-        <item>Touch &amp; hold an item and when it vibrates, drag it to the Trash icon. @drawable/trash</item>
-        <item>Swipe left or right to switch. Drag items to other screens.</item>
-        <item>Drag the Status bar down from the top of the screen.</item>
-        <item>Press the Menu button and touch Settings.</item>
-        <item>Touch &amp; hold it and when it vibrates, drag it to the Trash icon.</item>
+        <!-- Tip: Where the launcher icon is and what it does. With icon. -->
+        <item>See all your apps.\n
+        Touch the Launcher icon. @drawable/all_apps</item>
+
+        <!-- Tip: Longpress to add icons/widgets to the workspace. -->
+        <item>Add items to your Home screen.\n
+        Touch &amp; hold an empty spot to add shortcuts or widgets.</item>
+
+        <!-- Tip: Longpress to move icons/widgets around. -->
+        <item>Rearrange your Home screen.\n
+        Touch &amp; hold an item and when it vibrates, drag it where you want.</item>
+
+        <!-- Tip: Longpress icons/widgets and drag to trash to remove them. -->
+        <item>Remove items.\n
+        Touch &amp; hold an item and when it vibrates, drag it to the Trash icon. @drawable/trash</item>
+
+        <!-- Tip: Swipe to switch workspaces; drag items to move them to other
+             workspaces. -->
+        <item>Multiple Home screens.\n
+        Swipe left or right to switch. Drag items to other screens.</item>
+
+        <!-- Tip: Reminder about how to delete widgets, reinforcing that this
+             technique can be used to remove the tips widget iteself. -->
+        <item>Done with this widget?\n
+        Touch &amp; hold it and when it vibrates, drag it to the Trash icon.</item>
     </string-array>
 </resources>

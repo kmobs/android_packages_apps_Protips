@@ -24,8 +24,10 @@ import android.appwidget.AppWidgetProvider;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -50,10 +52,15 @@ public class ProtipWidget extends AppWidgetProvider {
     public static final String ACTION_NEXT_TIP = "com.android.misterwidget.NEXT_TIP";
     public static final String ACTION_POKE = "com.android.misterwidget.HEE_HEE";
 
-    public static final String EXTRA_TIP_NUMBER = "tip";
     public static final String EXTRA_TIMES = "times";
 
+    public static final String PREFS_NAME = "Protips";
+    public static final String PREFS_TIP_NUMBER = "widget_tip";
+
     private static Random sRNG = new Random();
+
+    private static final Pattern sNewlineRegex = Pattern.compile(" *\\n *");
+    private static final Pattern sDrawableRegex = Pattern.compile(" *@(drawable/[a-z0-9_]+) *");
 
     // initial appearance: eyes closed, no bubble
     private int mIconRes = R.drawable.droidman_open;
@@ -64,14 +71,23 @@ public class ProtipWidget extends AppWidgetProvider {
     private Context mContext;
 
     private CharSequence[] mTips;
-    private CharSequence[] mTitles;
 
     private void setup(Context context) {
         mContext = context;
         mWidgetManager = AppWidgetManager.getInstance(context);
         mWidgetIds = mWidgetManager.getAppWidgetIds(new ComponentName(context, ProtipWidget.class));
-        mTips = mContext.getResources().getTextArray(R.array.tips);
-        mTitles = mContext.getResources().getTextArray(R.array.titles);
+
+        SharedPreferences pref = context.getSharedPreferences(PREFS_NAME, 0);
+        mMessage = pref.getInt(PREFS_TIP_NUMBER, 0);
+
+        mTips = context.getResources().getTextArray(R.array.tips);
+
+        if (mTips != null) {
+            if (mMessage >= mTips.length) mMessage = 0;
+        } else {
+            mMessage = -1;
+        }
+
     }
 
     public void goodmorning() {
@@ -96,10 +112,11 @@ public class ProtipWidget extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
         setup(context);
 
-        // carry state along in every message
-        mMessage = intent.getIntExtra(EXTRA_TIP_NUMBER, 0);
-
         if (intent.getAction().equals(ACTION_NEXT_TIP)) {
+            mMessage = getNextMessageIndex();
+            SharedPreferences.Editor pref = context.getSharedPreferences(PREFS_NAME, 0).edit();
+            pref.putInt(PREFS_TIP_NUMBER, mMessage);
+            pref.commit();
             refresh();
         } else if (intent.getAction().equals(ACTION_POKE)) {
             blink(intent.getIntExtra(EXTRA_TIMES, 1));
@@ -148,29 +165,33 @@ public class ProtipWidget extends AppWidgetProvider {
         RemoteViews updateViews = new RemoteViews(
             context.getPackageName(), R.layout.widget);
 
+        // Action for tap on bubble
         Intent bcast = new Intent(context, ProtipWidget.class);
         bcast.setAction(ACTION_NEXT_TIP);
-        bcast.putExtra(EXTRA_TIP_NUMBER, getNextMessageIndex());
         PendingIntent pending = PendingIntent.getBroadcast(
             context, 0, bcast, PendingIntent.FLAG_UPDATE_CURRENT);
         updateViews.setOnClickPendingIntent(R.id.tip_bubble, pending);
 
+        // Action for tap on android
         bcast = new Intent(context, ProtipWidget.class);
         bcast.setAction(ACTION_POKE);
-        bcast.putExtra(EXTRA_TIP_NUMBER, mMessage);
         bcast.putExtra(EXTRA_TIMES, 1);
         pending = PendingIntent.getBroadcast(
             context, 0, bcast, PendingIntent.FLAG_UPDATE_CURRENT);
         updateViews.setOnClickPendingIntent(R.id.bugdroid, pending);
 
+        // Tip bubble text
         if (mMessage >= 0) {
-            CharSequence text = mTips[mMessage];
-            Pattern p = Pattern.compile(" *@(drawable/[a-z0-9_]+) *");
-            Matcher m = p.matcher(text);
+            String[] parts = sNewlineRegex.split(mTips[mMessage], 2);
+            String title = parts[0];
+            String text = parts.length > 1 ? parts[1] : "";
+
+            // Look for a callout graphic referenced in the text
+            Matcher m = sDrawableRegex.matcher(text);
             if (m.find()) {
                 String imageName = m.group(1);
                 int resId = context.getResources().getIdentifier(
-                   
+
                     imageName, null, context.getPackageName());
                 updateViews.setImageViewResource(R.id.tip_callout, resId);
                 updateViews.setViewVisibility(R.id.tip_callout, View.VISIBLE);
@@ -183,10 +204,11 @@ public class ProtipWidget extends AppWidgetProvider {
             updateViews.setTextViewText(R.id.tip_message, 
                 text);
             updateViews.setTextViewText(R.id.tip_header,
-                mTitles[mMessage]);
+                title);
             updateViews.setTextViewText(R.id.tip_footer, 
-                String.format(context.getResources().getString(R.string.pager_footer),
-                (1+mMessage), mTips.length));
+                context.getResources().getString(
+                    R.string.pager_footer,
+                    (1+mMessage), mTips.length));
             updateViews.setViewVisibility(R.id.tip_bubble, View.VISIBLE);
         } else {
             updateViews.setViewVisibility(R.id.tip_bubble, View.INVISIBLE);
