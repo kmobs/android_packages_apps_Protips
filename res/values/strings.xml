@@ -22,4 +22,7 @@
             %2$d - the total number of tips
          -->
     <string name="pager_footer"><xliff:g id="curPage" example="1">%1$d</xliff:g> of <xliff:g id="numPages" example="2">%2$d</xliff:g></string>
+    <!-- String to cause a TTS pause after reading @string/widget_name.
+         Do not translate. -->
+    <string name="tts_pause">.</string>
 </resources>
