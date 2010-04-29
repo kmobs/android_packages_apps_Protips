@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="tips">
+    <item msgid="4457112202911142877">"Mira todas tus aplicaciones."\n"Toca el icono Menú de inicio. @drawable/all_apps"</item>
+    <item msgid="6679995877578133723">"Agrega elementos a tu pantalla principal."\n" Toca y mantén un lugar vacío para agregar accesos directos o widgets."</item>
+    <item msgid="8903218961940756528">"Vuelve a organizar la pantalla principal."\n" Toca y mantén tocando un elemento; cuando vibre, arrástralo a donde quieras."</item>
+    <item msgid="3123213860439458492">"Eliminar elementos:"\n"Toca y mantén un elemento, cuando vibre, arrástralo al icono Papelera.@drawable/trash"</item>
+    <item msgid="1000948398885889319">"Múltiples pantallas principales:"\n"Deslízate hacia la izquierda o derecha para intercambiar. Arrastra elementos a otras pantallas."</item>
+    <item msgid="424487960942281801">"¿Ya terminaste con este widget?"\n"Toca y mantén un elemento, cuando vibre, arrástralo al icono Papelera."</item>
+  </string-array>
+</resources>

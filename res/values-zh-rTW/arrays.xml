@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2010 The Android Open Source Project
+<!--  Copyright (C) 2010 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,12 +12,12 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
+ -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
-    <item msgid="4457112202911142877">"查看您的所有應用程式。"\n" 點一下 [啟動工具] 圖示。@drawable/all_apps"</item>
+    <item msgid="4457112202911142877">"查看您的所有應用程式。"\n" 點一下 [啟動器] 圖示。@drawable/all_apps"</item>
     <item msgid="6679995877578133723">"新增項目至手機主頁。"\n" 按住空白處，即可新增捷徑或小工具至該處。"</item>
     <item msgid="8903218961940756528">"重新整理手機主頁。"\n" 按住項目直至手機震動，然後把該項目拖曳至新的位置。"</item>
     <item msgid="3123213860439458492">"移除項目。"\n" 按住項目直至手機震動，然後把該項目拖曳至垃圾桶圖示。@drawable/trash"</item>
