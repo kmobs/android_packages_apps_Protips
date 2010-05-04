@@ -19,9 +19,9 @@
   <string-array name="tips">
     <item msgid="4457112202911142877">"Wyświetl wszystkie aplikacje."\n" Dotknij ikony z kratką. @drawable/all_apps"</item>
     <item msgid="6679995877578133723">"Dodaj element do głównego ekranu."\n" Dotknij pustego pola i przytrzymaj, aby dodać skrót lub widżet."</item>
-    <item msgid="8903218961940756528">"Poukładaj ikony na ekranie."\n" Dotknij wybranego elementu, przytrzymaj aż poczujesz wibrację i przeciągnij ikonę w dowolne miejsce."</item>
+    <item msgid="8903218961940756528">"Poukładaj ikony na ekranie."\n" Dotknij wybranej ikony, przytrzymaj aż poczujesz wibrację i przeciągnij ją w dowolne miejsce."</item>
     <item msgid="3123213860439458492">"Usuń element z ekranu."\n" Dotknij ikony, przytrzymaj aż poczujesz wibrację i przeciągnij ją do kosza. @drawable/trash"</item>
-    <item msgid="1000948398885889319">"Przełącz na inny ekran."\n" Przesuń palcem w bok, aby przełączyć ekran. Możesz też przesuwać elementy między ekranami."</item>
-    <item msgid="424487960942281801">"Nie potrzebujesz już tego widżetu?"\n" Dotknij i przytrzymaj go aż poczujesz wibrację, a następnie przeciągnij do kosza."</item>
+    <item msgid="1000948398885889319">"Przełącz na inny ekran."\n" Przesuń palcem w bok, aby przełączyć ekran. Przeciągaj ikony między ekranami."</item>
+    <item msgid="424487960942281801">"Nie potrzebujesz tego widżetu?"\n" Dotknij i przytrzymaj go aż poczujesz wibrację, a następnie przeciągnij do kosza."</item>
   </string-array>
 </resources>

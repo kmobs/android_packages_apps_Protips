@@ -22,6 +22,6 @@
     <item msgid="8903218961940756528">"Uspořádejte si plochu."\n" Dotkněte se položky a podržte ji. Jakmile začne vibrovat, přetáhněte ji, kam chcete."</item>
     <item msgid="3123213860439458492">"Odstranění položek."\n" Dotkněte se položky a podržte ji. Jakmile začne vibrovat, přetáhněte ji na ikonu koše. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Více ploch."\n" Plochu přepnete posunutím prstu doleva nebo doprava. Položky lze přetáhnout na jinou obrazovku."</item>
-    <item msgid="424487960942281801">"Již widget nepotřebujete?"\n" Přidržte jej a jakmile začne vibrovat, přetáhněte jej na ikonu koše."</item>
+    <item msgid="424487960942281801">"Widget už nepotřebujete?"\n" Přidržte jej a jakmile začne vibrovat, přetáhněte jej na ikonu koše."</item>
   </string-array>
 </resources>

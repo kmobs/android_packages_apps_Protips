@@ -17,11 +17,11 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
-    <item msgid="4457112202911142877">"Alle Anwendungen anzeigen:"\n" Berühren Sie das Übersichtssymbol. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Fügen Sie Ihrem Startbildschirm Elemente hinzu."\n" Berühren und halten Sie eine freie Stelle und fügen Sie Verknüpfungen oder Widgets hinzu."</item>
-    <item msgid="8903218961940756528">"Ordnen Sie Ihren Startbildschirm neu an."\n" Berühren und halten Sie ein Element. Sobald es vibriert, ziehen Sie es an die gewünschte Stelle."</item>
-    <item msgid="3123213860439458492">"Elemente entfernen:"\n" Berühren und halten Sie ein Element. Sobald es vibriert, ziehen Sie es in den Papierkorb. @drawable/trash"</item>
+    <item msgid="4457112202911142877">"Alle Anwendungen auf einen Blick:"\n" Berühren Sie das Übersichtssymbol. @drawable/all_apps"</item>
+    <item msgid="6679995877578133723">"Elemente hinzufügen:"\n" Berühren &amp; halten Sie eine freie Stelle auf dem Startbildschirm."</item>
+    <item msgid="8903218961940756528">"Startbildschirm neu anordnen:"\n" Berühren &amp; halten Sie ein Element. Sobald es vibriert, ziehen Sie es in Position."</item>
+    <item msgid="3123213860439458492">"Elemente entfernen:"\n" Berühren &amp; halten Sie ein Element und ziehen Sie es in den Papierkorb. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Mehrere Startbildschirme:"\n" Ziehen Sie zum Wechseln nach links oder rechts. Ziehen Sie Elemente auf andere Bildschirme."</item>
-    <item msgid="424487960942281801">"Sie brauchen dieses Widget nicht mehr?"\n" Berühren und halten Sie es. Sobald es vibriert, ziehen Sie es in den Papierkorb."</item>
+    <item msgid="424487960942281801">"Dieses Widget entfernen?"\n" Berühren &amp; halten Sie es. Sobald es vibriert, ziehen Sie es in den Papierkorb."</item>
   </string-array>
 </resources>
