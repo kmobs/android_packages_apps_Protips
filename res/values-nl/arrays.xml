@@ -18,9 +18,9 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Bekijk al uw toepassingen."\n" Raak de starticoon aan. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Voeg items toe aan uw startscherm."\n" Raak het scherm aan &amp; houd een lege plek ingedrukt om snelkoppelingen of widgets toe te voegen."</item>
-    <item msgid="8903218961940756528">"Deel uw startscherm opnieuw in."\n" Raak een item aan, houd het ingedrukt en sleep het naar de gewenste plek zodra het vibreert."</item>
-    <item msgid="3123213860439458492">"Items verwijderen."\n" Raak het item aan, houd het ingedrukt en sleep het naar de prullenbak zodra het vibreert. @drawable/trash"</item>
+    <item msgid="6679995877578133723">"Voeg items toe aan uw startscherm."\n" Raak het scherm aan en houd een lege plek ingedrukt."</item>
+    <item msgid="8903218961940756528">"Deel uw startscherm opnieuw in."\n" Raak een item aan, houd het ingedrukt en laat los zodra het vibreert."</item>
+    <item msgid="3123213860439458492">"Items verwijderen."\n" Raak het item aan, druk het in en sleep het naar de prullenbak zodra het vibreert. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Meerdere startschermen."\n" Schuif naar links of rechts om te wisselen. Sleep items naar andere schermen."</item>
     <item msgid="424487960942281801">"Klaar met deze widget?"\n" Raak \'m aan, houd \'m ingedrukt en sleep \'m naar de prullenbak zodra hij vibreert."</item>
   </string-array>

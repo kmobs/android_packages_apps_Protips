@@ -19,7 +19,7 @@
   <string-array name="tips">
     <item msgid="4457112202911142877">"Tüm uygulamalarınızı görün."\n" Başlatıcı simgesine dokunun. @drawable/all_apps"</item>
     <item msgid="6679995877578133723">"Ana ekranınıza öğe ekleyin."\n" Kısayol veya widget eklemek için boş bir noktaya dokunup bekleyin."</item>
-    <item msgid="8903218961940756528">"Ana ekranınızı yeniden düzenleyin."\n" Bir öğeye dokunup bekleyin ve titreştiğinde istediğiniz yere sürükleyin."</item>
+    <item msgid="8903218961940756528">"Ana ekranınızı düzenleyin."\n" Bir öğeye dokunun ve titreştiğinde sürükleyin."</item>
     <item msgid="3123213860439458492">"Öğeleri kaldırın."\n" Bir öğeye dokunup bekleyin ve titreştiğinde Çöp Kutusu simgesine sürükleyin. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Birden fazla Ana ekran."\n" Ekranlar arasında geçiş yapmak için sağa veya sola kaydırın. Öğeleri diğer ekranlara sürükleyin."</item>
     <item msgid="424487960942281801">"Bu widget\'la işiniz bitti mi?"\n" Üzerine dokunup bekleyin ve titreştiğinde Çöp Kutusu simgesine sürükleyin."</item>
