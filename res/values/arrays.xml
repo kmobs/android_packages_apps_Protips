@@ -36,9 +36,9 @@
         <item>See all your apps.\n
         Touch the Launcher icon. @drawable/all_apps</item>
 
-        <!-- Tip: Longpress to add icons/widgets to the workspace. -->
-        <item>Add items to your Home screen.\n
-        Touch &amp; hold an empty spot to add shortcuts or widgets.</item>
+        <!-- Tip: Longpress in Launcher (all apps) to drag apps to the home screen. -->
+        <item>Drag apps to your Home screen.\n
+        Touch &amp; hold an app in the Launcher until it vibrates.</item>
 
         <!-- Tip: Longpress to move icons/widgets around. -->
         <item>Rearrange your Home screen.\n
