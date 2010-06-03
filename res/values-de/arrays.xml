@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Alle Anwendungen auf einen Blick:"\n" Berühren Sie das Übersichtssymbol. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Elemente hinzufügen:"\n" Berühren &amp; halten Sie eine freie Stelle auf dem Startbildschirm."</item>
+    <item msgid="8842580895829057430">"Apps auf den Startbildschirm ziehen:"\n" Berühren &amp; halten Sie ein App in der Übersicht, bis es vibriert."</item>
     <item msgid="8903218961940756528">"Startbildschirm neu anordnen:"\n" Berühren &amp; halten Sie ein Element. Sobald es vibriert, ziehen Sie es in Position."</item>
     <item msgid="3123213860439458492">"Elemente entfernen:"\n" Berühren &amp; halten Sie ein Element und ziehen Sie es in den Papierkorb. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Mehrere Startbildschirme:"\n" Ziehen Sie zum Wechseln nach links oder rechts. Ziehen Sie Elemente auf andere Bildschirme."</item>

@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Visualizza tutte le applicazioni."\n" Tocca l\'icona Avvio. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Aggiungi elementi alla schermata Home."\n" Tieni premuto un punto per aggiungere scorciatoie o widget."</item>
+    <item msgid="8842580895829057430">"Trascina le applicazioni sulla schermata Home."\n" Tocca e tieni premuta un\'applicazione finché non vibra."</item>
     <item msgid="8903218961940756528">"Riorganizza la schermata Home."\n" Tieni premuto un elemento e quando vibra trascinalo dove vuoi."</item>
     <item msgid="3123213860439458492">"Rimuovi gli elementi."\n" Tieni premuto un elemento e quando vibra trascinalo sull\'icona Cestino. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Schermate Home multiple."\n" Scorri a sinistra o a destra per passare da una all\'altra. Trascina elementi in altre schermate."</item>

@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Accéder à toutes vos applications"\n" Appuyez sur le lanceur d\'applications. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Ajouter des icônes"\n" Appuyez sur un emplacement vide de l\'écran d\'accueil, maintenez et ajoutez un raccourci/widget."</item>
+    <item msgid="8842580895829057430">"Applications sur l\'écran d\'accueil."\n" Appuyez sur une icône dans le lanceur d\'applications et maintenez jusqu\'à ce qu\'elle vibre."</item>
     <item msgid="8903218961940756528">"Organiser l\'écran d\'accueil"\n" Appuyez sur un élément et maintenez. Lorsqu\'il vibre, placez-le à l\'endroit souhaité."</item>
     <item msgid="3123213860439458492">"Supprimer un élément"\n" Appuyez sur l\'élément et maintenez. Lorsqu\'il vibre, déplacez-le vers la corbeille. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Écrans d\'accueil multiples"\n" Faites glisser l\'écran vers la droite/gauche. Déplacez les icônes d\'un écran à l\'autre."</item>

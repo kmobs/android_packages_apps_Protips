@@ -18,9 +18,9 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Se alle dine programmer."\n" Tryk på startikonet. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Føj elementer til din startskærm."\n" Tryk på et tomt sted, og hold fingeren nede for at tilføje genveje eller widgets."</item>
-    <item msgid="8903218961940756528">"Rediger din startskærm."\n" Tryk og hold fingeren på et element. Træk det til et andet sted, når det vibrerer."</item>
-    <item msgid="3123213860439458492">"Fjern elementer."\n" Tryk og hold fingeren på et element. Træk det til papirkurven, når det vibrerer. @drawable/trash"</item>
+    <item msgid="8842580895829057430">"Træk programmer til din startskærm."\n" Hold fingeren på et program i startmenuen, til det vibrerer."</item>
+    <item msgid="8903218961940756528">"Rediger din startskærm."\n" Hold fingeren på et element. Træk det til et andet sted, når det vibrerer."</item>
+    <item msgid="3123213860439458492">"Fjern elementer."\n" Hold fingeren på et element. Træk det til papirkurven, når det vibrerer. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Flere startskærme."\n" Bladr til venstre eller højre for at skifte. Træk elementer til andre skærme."</item>
     <item msgid="424487960942281801">"Træt af denne widget?"\n" Tryk på den, og hold fingeren nede. Når widgetten vibrerer, kan du trække den til papirkurven."</item>
   </string-array>
