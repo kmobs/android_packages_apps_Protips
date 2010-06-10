@@ -18,9 +18,9 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Jak zobrazit všechny aplikace"\n" Dotkněte se ikony spouštěče. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Jak přidat položky na plochu"\n" Dotkněte se prázdného místa a podržte je, potom přidejte zástupce nebo widgety."</item>
+    <item msgid="8842580895829057430">"Jak přetáhnout aplikace na plochu"\n" Dotkněte se některé aplikace, přidržte ji, dokud nezačne vibrovat, a přetáhněte na plochu."</item>
     <item msgid="8903218961940756528">"Jak si uspořádat plochu"\n" Dotkněte se položky a podržte ji. Jakmile začne vibrovat, přetáhněte ji, kam chcete."</item>
-    <item msgid="3123213860439458492">"Jak odstranit položky"\n" Dotkněte se položky a podržte ji. Jakmile začne vibrovat, přetáhněte ji do koše. @drawable/trash"</item>
+    <item msgid="3123213860439458492">"Jak odstranit položky"\n" Přidržte vybranou položku. Jakmile začne vibrovat, přetáhněte ji do koše. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Více ploch"\n" Přejeďte prstem po obrazovce doleva nebo doprava. Položky lze přetáhnout na jinou obrazovku."</item>
     <item msgid="424487960942281801">"Widget už nepotřebujete?"\n" Přidržte jej a jakmile začne vibrovat, přetáhněte jej na ikonu koše."</item>
   </string-array>

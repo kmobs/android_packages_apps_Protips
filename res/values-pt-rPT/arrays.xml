@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Veja todas as suas aplicações."\n" Toque no ícone Iniciador. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Adicione itens ao ecrã principal."\n" Mantenha premido um ponto vazio para adicionar atalhos ou widgets."</item>
+    <item msgid="8842580895829057430">"Arraste aplicações para a página inicial."\n" No lançador de aplicações, toque num ícone e mantenha o dedo até o ícone começar a vibrar."</item>
     <item msgid="8903218961940756528">"Reorganize o ecrã principal."\n" Mantenha premido um item e quando este vibrar, arraste-o para onde quiser."</item>
     <item msgid="3123213860439458492">"Remova os itens."\n" Mantenha premido um item e quando este vibrar, arraste-o para o ícone Lixo. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Vários ecrãs principais."\n" Deslize para a esquerda ou para a direita para mudar. Arraste os itens para outros ecrãs."</item>

@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="tips">
     <item msgid="4457112202911142877">"Accede a tus aplicaciones."\n"Toca el icono cuadrado. @drawable/all_apps"</item>
-    <item msgid="6679995877578133723">"Agrega iconos en la pantalla"\n" Toca unos segundos para agregar accesos directos o widgets."</item>
+    <item msgid="8842580895829057430">"Agrega aplicaciones al escritorio"\n" Mantén presionada una aplicación hasta que vibre."</item>
     <item msgid="8903218961940756528">"Organiza la pantalla"\n" Mantén tocado un icono. Cuando la pantalla vibre, arrástralo a donde quieras."</item>
     <item msgid="3123213860439458492">"Elimina iconos"\n" Mantén tocado un icono. Cuando la pantalla vibre, arrástralo hasta la papelera. @drawable/trash"</item>
     <item msgid="1000948398885889319">"Crea varias pantallas"\n" Desliza el dedo hacia la izquierda o derecha y arrastra iconos a otras pantallas."</item>
