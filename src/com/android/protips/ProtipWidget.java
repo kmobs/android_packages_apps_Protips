@@ -24,6 +24,7 @@ import android.appwidget.AppWidgetProvider;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
+import android.provider.Settings;
 import android.content.SharedPreferences;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -37,6 +38,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.text.format.Time;
 import android.text.Spannable;
 import android.util.Log;
@@ -79,8 +81,12 @@ public class ProtipWidget extends AppWidgetProvider {
 
         SharedPreferences pref = context.getSharedPreferences(PREFS_NAME, 0);
         mMessage = pref.getInt(PREFS_TIP_NUMBER, 0);
-
-        mTips = context.getResources().getTextArray(R.array.tips);
+	
+		if (Settings.System.getInt(mContext.getContentResolver(),
+         Settings.System.BROTIPS, 0) == 0)
+			mTips = context.getResources().getTextArray(R.array.protips);
+		else
+        	mTips = context.getResources().getTextArray(R.array.brotips);
 
         if (mTips != null) {
             if (mMessage >= mTips.length) mMessage = 0;

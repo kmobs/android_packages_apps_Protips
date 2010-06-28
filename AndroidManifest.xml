@@ -16,4 +16,5 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_build" />
         </receiver>
     </application>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 </manifest>
