@@ -31,10 +31,37 @@
          |  Touch the Launcher icon.                   |   |___|
          |_____________________________________________|    U U
     -->
-    <string-array name="tips">
+    <string-array name="protips">
         <!-- Tip: Where the launcher icon is and what it does. With icon. -->
         <item>See all your apps.\n
         Touch the Launcher icon. @drawable/all_apps</item>
+
+        <!-- Tip: Longpress in Launcher (all apps) to drag apps to the home screen. -->
+        <item>Drag apps to your Home screen.\n
+        Touch &amp; hold an app in the Launcher until it vibrates.</item>
+
+        <!-- Tip: Longpress to move icons/widgets around. -->
+        <item>Rearrange your Home screen.\n
+        Touch &amp; hold an item and when it vibrates, drag it where you want.</item>
+
+        <!-- Tip: Longpress icons/widgets and drag to trash to remove them. -->
+        <item>Remove items.\n
+        Touch &amp; hold an item and when it vibrates, drag it to the Trash icon. @drawable/trash</item>
+
+        <!-- Tip: Swipe to switch workspaces; drag items to move them to other
+             workspaces. -->
+        <item>Multiple Home screens.\n
+        Swipe left or right to switch. Drag items to other screens.</item>
+
+        <!-- Tip: Reminder about how to delete widgets, reinforcing that this
+             technique can be used to remove the tips widget iteself. -->
+        <item>Done with this widget?\n
+        Touch &amp; hold it and when it vibrates, drag it to the Trash icon.</item>
+    </string-array>
+    <string-array name="brotips">
+        <!-- Tip: Find out what it means to kang. -->
+        <item>Kang [kahng] - (verb)\n
+        Upgraded my winzip br0. Thanks to my patient lady putting up with my devvin @drawable/kang_truck</item>
 
         <!-- Tip: Longpress in Launcher (all apps) to drag apps to the home screen. -->
         <item>Drag apps to your Home screen.\n
